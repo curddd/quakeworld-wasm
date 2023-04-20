@@ -1,0 +1,10 @@
+<script>
+    const ws = new WebSocket("ws://localhost:5555?nodejs=shit&host=localhost&port=1234");
+    ws.onopen = ()=>{
+        ws.send("CONNECT localhost:2222");
+        ws.send("XDDD");
+    }
+    ws.onmessage=  (msg)=>{
+        console.log("got msg",msg.data,msg.data.toString());
+    }
+</script>
