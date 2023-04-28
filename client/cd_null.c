@@ -8,8 +8,6 @@ void CDAudio_Play(byte track, qboolean looping)
 void CDAudio_Stop(void)
 {
 }
-
-
 void CDAudio_Resume(void)
 {
 }
